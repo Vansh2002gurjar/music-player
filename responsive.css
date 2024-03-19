@@ -1,0 +1,206 @@
+/* these are all the media queries for index.html page with the desktop first approach*/
+@media screen and (max-width: 1200px) {
+    /* animated favourites text will be hidden for this viewport width*/
+
+    /* :root {
+        background-color: green;
+    } */
+    .playlist-inner{
+        /* border: 2px solid red; */
+        width: 90%;
+    }
+    .inner-c img{
+       width:21vw;
+       height: 20vh;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    /* more button vil ve visible and section 2 will be hidden by default for this viewport */
+
+    /* :root {
+        background-color: orange;
+    } */
+    .search-bar {
+        position: relative;
+        /* width: 20%; */
+        left: -3vw;
+        /* width: min-content; */
+        min-width: 100px;
+        /* margin:0 0; */
+        /* left: 20%; */
+    }
+    .inner-c img{
+        /* position: absolute; */
+        /* height: 25%; */
+        width: 30vw;
+        transition: all cubic-bezier(0.68, -0.55, 0.265, 1.55) 0.2s;
+    }
+
+    label[for="more"] {
+        display: block;
+
+    }
+    
+    .section1 {
+		width: 100%;
+	}
+
+    .card {
+        /* border: 2px solid black; */
+        width: 45vw;
+    }
+
+    .section2 {
+        /* visibility: hidden; */
+        opacity: 0;
+        position: absolute;
+        background-color: darkblue;
+        width: 300px;
+        height: 69vh;
+        top: 23.5%;
+        width: 300px;
+        overflow: scroll;
+        overflow-x: hidden;
+        background-color: #050043;
+        box-shadow: 0px 0px 2px 1px white;
+        right: 0px;
+        top: 23.5%;
+        z-index: 5;
+        overflow: scroll;
+        padding-left: 10px;
+        transition: visibility ease-in-out 0.2s;
+        transition: opacity ease-in-out 0.2s;
+
+    }
+
+    .playlist-content {
+        visibility: visible;
+        opacity: 1;
+    }
+
+    input[id="more"]:checked~.section2 {
+        /* visibility: visible; */
+        opacity: 1;
+    }
+    .music-themes{
+       width: 90vw;
+    }
+    .station{
+        position: relative;
+        left: 5vw;
+    }
+    /* .theme-main{
+        border: 2px solid black;
+    } */
+    .theme-content{
+        position: relative;
+        /* top: 4vw; */
+        /* border: 2px solid black; */
+    }
+
+}
+
+@media screen and (max-width: 700px) {
+
+    /* in the screens of this width, generally volume buttons are provided at the side. */
+    /* so there is no need for the volume slider at this width. so i have removed them from the display */
+    /* footer section */
+    .extras>div:nth-child(3) {
+        display: none;
+    }
+
+    .extras>div:nth-child(4) {
+        display: none;
+    }
+
+    .outer-div {
+        width: 36vw;
+        height: 24vw;
+        min-width: 123px;
+        min-height: 82px;
+    }
+
+    .outer-div .inner-div span {
+        font-size: 4vw;
+    }
+    .outer-div .inner-div span {
+        font-size: 6vw;
+    }
+    .outer-div{
+        width: 2vw;
+        height: 0.5vh;
+    }
+    .inner-div span{
+        font-size: 20px!important;
+    }
+
+    /* :root {
+        background-color: yellow;
+    } */
+    .inner-c img{
+        /* position: absolute; */
+        /* height: 25%; */
+        width: 28vw;
+        transition: all cubic-bezier(0.68, -0.55, 0.265, 1.55) 0.2s;
+    }
+}
+
+@media screen and (max-width: 550px) {
+
+    /* this is the most important media query */
+    /* navigation bar section */
+    /* website image */
+    .search-bar{
+        width: 100px;
+    }
+    .bell{
+        position: relative;
+        left:-12%;
+    }
+    .theme-content{
+        size: 10px;
+    }
+    .latest-release .latest-release-content {
+        display: flex;
+        flex-direction: column!important;
+        /* width: 100%; */
+
+    }
+    .card{
+        width: 95%;
+    }
+
+   
+    /* stations */
+    /* this is the stations section- those colorful boxes in the tri-linear-gradient div */
+    #div3 p{
+        font-size: 12px;
+    }
+
+    .outer-div .inner-div span {
+        font-size: 6vw;
+    }
+    .outer-div{
+        width: 2vw;
+        height: 0.5vh;
+    }
+    .inner-div span{
+        font-size: 12px;
+    }
+    .search-bar {
+        position: relative;
+        /* width: 20%; */
+        left: -9vw;
+        /* width: min-content; */
+        min-width: 100px;
+        /* margin:0 0; */
+        /* left: 20%; */
+    }
+
+    /* :root {
+        background-color: red;
+    } */
+}
+
+
